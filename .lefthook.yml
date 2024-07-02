@@ -1,0 +1,8 @@
+---
+pre-commit:
+  parallel: true
+  commands:
+    hadolint:
+      tags: docker
+      glob: "Dockerfile"
+      run: hadolint {staged_files}
